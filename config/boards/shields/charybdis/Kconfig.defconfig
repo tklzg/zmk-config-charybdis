@@ -1,7 +1,7 @@
 # Copyright (c) 2020 Ryan Cross
 # SPDX-License-Identifier: MIT
 
-if SHIELD_CHARYBDIS_LEFT
+if SHIELD_CHARYBDIS_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "Charybdis"
@@ -9,11 +9,17 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_USB
+    default y
+
 endif
 
-if SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
+if SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT || SHIELD_CHARYBDIS_DONGLE
 
 config ZMK_SPLIT
+    default y
+
+config ZMK_BLE
     default y
 
 endif
