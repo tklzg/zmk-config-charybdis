@@ -299,16 +299,19 @@
 
 };
 
-ZMK_BEHAVIOR(mlt, hold_tap,
-    flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-    bindings = <&mo>, <&mkp>;
-)
+
+
 
     
 
 / {
+    ZMK_BEHAVIOR(mlt, hold_tap,
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    bindings = <&mo>, <&mkp>;)
     behaviors {
+
+
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
