@@ -353,9 +353,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&ctrl_tab>, <&ctrl_sh_tab>;
         };
-        
-    };
-};
+ };
 
 / {
 
