@@ -449,8 +449,8 @@
             display-name = "mouse";
             bindings = <
 &bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &none &none &none &none &none &none
-&ext_power EP_TOG &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &kp PG_UP &mkp LCLK &mkp MCLK &mkp RCLK &none &none
-&none             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                   &kp PG_DN &none &none &none &none &kp RET
+&ext_power EP_TOG &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &kp PG_UP &kp HOME &mkp MCLK &kp END &none &none
+&none             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                   &kp PG_DN &mkp LCLK &mkp MCLK &mkp RCLK &none &kp RET
 &none             &none           &none           &none           &none           &none                                   &none &none &alt_left &alt_right &none &none
 &none             &none           &none           &none           &none           &none                                   &none &none &none &none &none &none
             >;
