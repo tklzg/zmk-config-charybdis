@@ -18,6 +18,8 @@
 #define RAISE 2
 #define ADJUST 3
 #define MOUSE 4
+#define SCROLL 5
+
 
 
 / {
@@ -333,6 +335,16 @@
             bindings = <&mo>, <&kp>;
         };
 
+        scl: scl_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SCL_LAYER";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&mkp>;
+        };
+
         rot_lkp: rot_lkp {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENC_LKP";
@@ -450,7 +462,24 @@
             bindings = <
 &bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &none &none &none &none &none &none
 &ext_power EP_TOG &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &kp PG_UP &kp HOME &mkp MCLK &kp END &none &none
-&none             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                   &kp PG_DN &mkp LCLK &mkp MCLK &mkp RCLK &none &kp RET
+&none             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                   &kp PG_DN &mkp LCLK &scl 5 MCLK &mkp RCLK &none &kp RET
+&none             &none           &none           &none           &none           &none                                   &none &none &alt_left &alt_right &none &none
+&none             &none           &none           &none           &none           &none                                   &none &none &none &none &none &none
+            >;
+        };
+
+        scroll_layer {
+// ----------------------------------------------------------------------------------------------------------------------------
+// | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
+// | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
+// |        | RGB_BRD | RGB_BRI |         |         |         |                  |      |      |       |      |       |       |
+// |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
+//                    |         |         |         |         |         | |      |      |      |       |      |
+            display-name = "scroll";
+            bindings = <
+&bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &none &none &none &none &none &none
+&ext_power EP_TOG &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &kp PG_UP &kp HOME &none &kp END &none &none
+&none             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                   &kp PG_DN &mkp LCLK &scl 5 MCLK &mkp RCLK &none &kp RET
 &none             &none           &none           &none           &none           &none                                   &none &none &alt_left &alt_right &none &none
 &none             &none           &none           &none           &none           &none                                   &none &none &none &none &none &none
             >;
