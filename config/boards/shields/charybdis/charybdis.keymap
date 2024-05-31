@@ -412,7 +412,7 @@
 &alt_tab   &kp F2        &alt_w_n     &kp F4       &ctrl_r      &out OUT_USB                    &trans   &trans   &trans &trans &kp F11 &kp F12
 &trans     &ctrl_a       &ctrl_s      &c_v_hom_bs  &c_v_hom_del &shift_g                        &trans   &trans   &trans &trans &kp RPAR &kp RET
 &trans     &ctrl_z       &ctrl_x      &ctrl_c      &ctrl_v      &out OUT_BLE                    &ext_power EP_OFF &ext_power EP_ON &alt_left     &alt_right  &kp BSLH  &kp LSHFT
-&trans      &trans        &trans      &trans       &trans      &trans                            &trans  &trans    &trans   &trans  &trans        &trans
+&trans      &alt_enter        &trans      &trans       &alt_ctrl_del      &trans                            &trans  &trans    &trans   &trans  &trans        &trans
             >;
         };
 
