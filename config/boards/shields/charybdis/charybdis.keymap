@@ -329,7 +329,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "ALT_LAYER";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <80>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
@@ -343,27 +343,6 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&mkp>;
-        };
-
-        rot_lkp: rot_lkp {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENC_LKP";
-            #sensor-binding-cells = <0>;
-            bindings = <&ctrl_z>, <&ctrl_y>;
-        };
-
-        rot_lkp_b: rot_lkp_b {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENC_LKP_BACK";
-            #sensor-binding-cells = <0>;
-            bindings = <&alt_right>, <&alt_left>;
-        };
-
-        rot_lkp_t: rot_lkp_t {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENC_LKP_TAB";
-            #sensor-binding-cells = <0>;
-            bindings = <&ctrl_tab>, <&ctrl_sh_tab>;
         };
  };
 
