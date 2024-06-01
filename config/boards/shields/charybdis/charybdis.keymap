@@ -480,7 +480,7 @@
 &hm ESC GRAVE  &kp N1  &kp N2   &kp N3     &kp N4   &kp N5                 &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp MINUS
 &kp TAB             &kp Q   &kp W    &kp E      &kp R    &kp T                         &kp PG_UP &kp HOME &kp UP &kp END &none &none
 &kp LCTRL           &kp A   &kp S    &kp D      &kp F    &kp G                                   &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &none &kp RET
-&kp LSHFT           &kp Z   &kp X    &kp C      &kp V    &kp B                                   &tog 5 &mkp LCLK &scl 5 MCLK &mkp RCLK &alt_left &alt_right
+&kp LSHFT           &kp Z   &kp X    &kp C      &kp V    &kp B                                   &sl 5 &mkp LCLK &scl 5 MCLK &mkp RCLK &alt_left &alt_right
 &none             &kp RET         &kp RBKT        &al 1 RALT      &kp DEL         &kp LBKT                                &tog 4  &none    &kp BSPC  &none   &kp SPACE &none
             >;
         };
