@@ -96,24 +96,11 @@
            bindings = <&ib_wheel_scaler_x 1 8 &ib_wheel_scaler_y 1 25>;
    };
 
-   trackball_peripheral_snipe_listener {
-          compatible = "zmk,input-behavior-listener";
-          device = <&pd1>;
-          layers = <6>;
-          evt-type = <INPUT_EV_REL>;
-          x-input-code = <INPUT_REL_X>;
-          y-input-code = <INPUT_REL_Y>;
-          scale-multiplier = <1>;
-          scale-divisor = <1>;
-          rotate-deg = <315>;
-          bindings = <&ib_snipe_scaler_x 1 8 &ib_snipe_scaler_y 1 8>;
-   };
-
    /* adjust cooldown waiting period for mouse key layer (MSK) after activated */
    ib_tog_layer: ib_tog_layer {
         compatible = "zmk,input-behavior-tog-layer";
         #binding-cells = <1>;
-        time-to-live-ms = <2000>;
+        time-to-live-ms = <500>;
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
