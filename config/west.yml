@@ -4,13 +4,15 @@ manifest:
       url-base: https://github.com/petejohanson
     - name: badjeff
       url-base: https://github.com/badjeff
+    - name: tklzg
+      url-base: https://github.com/tklzg
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: feat/pointers-move-scroll
       import: app/west.yml
-    - name: zmk-pmw3610-driver
-      remote: badjeff
+    - name: zmk-pmw3610-driver-badjeff
+      remote: tklzg
       revision: main
     - name: zmk-split-peripheral-input-relay
       remote: badjeff
