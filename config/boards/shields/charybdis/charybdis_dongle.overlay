@@ -68,7 +68,7 @@
 	    x-input-code = <INPUT_REL_X>;
 	    y-input-code = <INPUT_REL_Y>;
 	    scale-multiplier = <1>;
-	    scale-divisor = <5>;
+	    scale-divisor = <3>;
         bindings = <&ib_tog_layer 4>;
    };
 
@@ -92,7 +92,7 @@
            /* NOTE: This behavior is different to scale-divisor. */
            /*       The delta value is accumlated until result >= 1 after cast. */
            /*       The scrolling is preented in hi-res and allow precise scrolling */
-           bindings = <&ib_wheel_scaler_x 2 1 &ib_wheel_scaler_y 2 1>;
+           bindings = <&ib_wheel_scaler_x 3 1 &ib_wheel_scaler_y 3 1>;
    };
 
    trackball_peripheral_snipe_listener {
