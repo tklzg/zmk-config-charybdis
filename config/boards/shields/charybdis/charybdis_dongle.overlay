@@ -76,7 +76,7 @@
    trackball_peripheral_scroll_listener {
            compatible = "zmk,input-behavior-listener";
            device = <&pd1>;
-           layers = <5>;
+           layers = <0 5>;
            evt-type = <INPUT_EV_REL>;
            /* slienting x-axis with alt event code */
            x-input-code = <INPUT_REL_HWHEEL>;
