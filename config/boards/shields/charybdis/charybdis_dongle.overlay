@@ -62,7 +62,7 @@
   trackball_peripheral_auto_mouse_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&pd1>;
-        layers = <0>;
+        layers = <0 4>;
         rotate-deg = <315>;
 	    evt-type = <INPUT_EV_REL>;
 	    x-input-code = <INPUT_REL_X>;
@@ -84,7 +84,7 @@
            /* invent scrolling direction */
            y-invert;
            /* align to CCW 45 degree */
-           rotate-deg = <180>;
+           rotate-deg = <315>;
            /* NOTE 1: This settings do not compitable with y-invert and x-invert */
            /* NOTE 2: Floating point computation requires alot of ram. */
            /*         This feature will cuase stackove flow with CONFIG_ZMK_USB_LOGGING=y *   
