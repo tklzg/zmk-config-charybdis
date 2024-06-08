@@ -92,7 +92,7 @@
            /* NOTE: This behavior is different to scale-divisor. */
            /*       The delta value is accumlated until result >= 1 after cast. */
            /*       The scrolling is preented in hi-res and allow precise scrolling */
-           bindings = <&ib_wheel_scaler_x 1 28 &ib_wheel_scaler_y 1 30>;
+           bindings = <&ib_wheel_scaler_x 1 4 &ib_wheel_scaler_y 1 4>;
    };
 
    trackball_peripheral_snipe_listener {
