@@ -43,29 +43,34 @@
 
 /* this is an alias of your actual wired input device sensor in your peripheral shield. */
 /* e.g. SPI optical sensor for trackball */
+
+&spi1 {
+  status = "okay";
+	pinctrl-0 = <&spi1_default>;
+	pinctrl-1 = <&spi1_sleep>;
+	pinctrl-names = "default", "sleep";
+	cs-gpios = <&gpio0 20 GPIO_ACTIVE_LOW>;
+};
+
 &pd0 {
 	status = "okay";
-	/* the rest of sensor config should be config here, e.g. gpios */
+		irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+	cpi = <1200>;
+	evt-type = <INPUT_EV_REL>;
+	x-input-code = <INPUT_REL_X>;
+	y-input-code = <INPUT_REL_Y>;
 };
 
 / {
-	/* THIS make keymap binding happy only, nothing happen on peripheral side */
-	pd1: virtual_input {
-		compatible = "zmk,virtual-input";
-	};
-
 	/* for peripheral side, define (input-device)-to-(relay-channel) mapping */
 	input_relay_config_102 {
 		compatible = "zmk,split-peripheral-input-relay";
 
-		/* peripheral side input device, used to... */
-		/*  - be intecepted on peripheral; */
-		/*  - and then, be resurrected as `zmk,virtual-device` on central; */
+		/* peripheral side input device, used to be intecepted and be resurrected on central */
 		device = <&pd0>;
 		
-		/* channel id, used to be be transfered along with all input events. */
-		/* NOTE 1: pick any 8bit integer. (1 - 255) */
-		/* NOTE 2: should matching relay-channel on central overlay */
+		/* channel id, used to annotate raw input event */
+		/* NOTE: should matching relay-channel on central overlay */
 		relay-channel = <102>;
 	};
 };
