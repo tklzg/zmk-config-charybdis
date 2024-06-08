@@ -23,6 +23,7 @@ config ZMK_BLE
     default y
 
 endif
+
 config MOUSE_LAYER_INDEX
 	int "Index of mouse layer"
 	default 4
