@@ -78,7 +78,7 @@
            layers = <5>;
            evt-type = <INPUT_EV_REL>;
            /* slienting x-axis with alt event code */
-           x-input-code = <INPUT_REL_MISC>;
+           x-input-code = <INPUT_REL_HWHEEL>;
            y-input-code = <INPUT_REL_WHEEL>;   
            /* invent scrolling direction */
            y-invert;
@@ -105,7 +105,7 @@
         compatible = "zmk,input-behavior-scaler";
         #binding-cells = <2>;
         evt-type = <INPUT_EV_REL>;
-        input-code = <INPUT_REL_MISC>;
+        input-code = <INPUT_REL_HWHEEL>;
     };
 
     ib_wheel_scaler_y: ib_wheel_scaler_y {
