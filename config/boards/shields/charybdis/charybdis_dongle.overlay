@@ -68,7 +68,7 @@
 	    x-input-code = <INPUT_REL_X>;
 	    y-input-code = <INPUT_REL_Y>;
 	    scale-multiplier = <1>;
-	    scale-divisor = <3>;
+	    scale-divisor = <1>;
         bindings = <&ib_tog_layer 4>;
    };
 
