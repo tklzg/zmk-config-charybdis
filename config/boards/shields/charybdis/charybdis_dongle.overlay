@@ -80,11 +80,11 @@
            layers = <5>;
            evt-type = <INPUT_EV_REL>;
            /* slienting x-axis with alt event code */
-           x-input-code = <INPUT_REL_HWHEEL>;
+           x-input-code = <INPUT_REL_MISC>;
            y-input-code = <INPUT_REL_WHEEL>;   
            /* invent scrolling direction */
            rotate-deg = <310>;
-           /* y-invert; */
+           /* y-invert; */ 
            scale-divisor = <1>;
            /* NOTE 1: This settings do not compitable with y-invert and x-invert */
            /* NOTE 2: Floating point computation requires alot of ram. */
