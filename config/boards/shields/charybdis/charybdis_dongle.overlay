@@ -80,7 +80,7 @@
            layers = <5>;
            evt-type = <INPUT_EV_REL>;
            /* slienting x-axis with alt event code */
-           x-input-code = <INPUT_REL_HWHEEL>;
+           /*x-input-code = <INPUT_REL_HWHEEL>;*/
            y-input-code = <INPUT_REL_WHEEL>;   
            /* invent scrolling direction */
            rotate-deg = <310>;
