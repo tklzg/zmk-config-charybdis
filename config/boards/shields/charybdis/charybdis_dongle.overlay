@@ -84,7 +84,7 @@
            y-input-code = <INPUT_REL_WHEEL>;   
            /* invent scrolling direction */
            rotate-deg = <310>;
-           y-invert;
+           /* y-invert; */
            scale-divisor = <4>;
            /* NOTE 1: This settings do not compitable with y-invert and x-invert */
            /* NOTE 2: Floating point computation requires alot of ram. */
