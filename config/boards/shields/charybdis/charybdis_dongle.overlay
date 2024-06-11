@@ -66,9 +66,10 @@
 	    evt-type = <INPUT_EV_REL>;
 	    x-input-code = <INPUT_REL_X>;
 	    y-input-code = <INPUT_REL_Y>;
-        rotate-deg = <320>;
+        rotate-deg = <40>;
 	    scale-multiplier = <1>;
 	    scale-divisor = <1>;
+        y-invert;
         bindings = <&ib_tog_layer 4>;
    };
 
@@ -82,7 +83,7 @@
            x-input-code = <INPUT_REL_HWHEEL>;
            y-input-code = <INPUT_REL_WHEEL>;   
            /* invent scrolling direction */
-           rotate-deg = <320>;
+           rotate-deg = <40>;
            y-invert;
            scale-divisor = <4>;
            /* NOTE 1: This settings do not compitable with y-invert and x-invert */
