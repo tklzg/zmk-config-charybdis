@@ -389,8 +389,7 @@
 &bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &alt_f4      &kp F5                          &kp F6   &kp F7   &kp F8 &kp F9 &kp F10 &kp F11
 &alt_tab   &kp F2        &alt_w_n     &kp F4       &ctrl_r      &out OUT_USB                    &trans   &trans   &trans &trans &kp F11 &kp F12
 &trans     &ctrl_a       &ctrl_s      &c_v_hom_bs  &c_v_hom_del &shift_ins                      &trans   &trans   &trans &trans &kp RPAR &kp RET
-&trans     &ctrl_z       &ctrl_x      &ext_power EP_OFF &ext_power EP_ON      &out OUT_BLE                    &ext_power EP_OFF &ext_power EP_ON &alt_left  &alt_right  &kp BSLH  &kp LSHFT
-//&trans     &ctrl_z       &ctrl_x      &ctrl_c      &ctrl_v      &out OUT_BLE                    &ext_power EP_OFF &ext_power EP_ON &alt_left  &alt_right  &kp BSLH  &kp LSHFT
+&trans     &ctrl_z       &ctrl_x      &ctrl_c      &ctrl_v      &out OUT_BLE                    &ext_power EP_OFF &ext_power EP_ON &alt_left  &alt_right  &kp BSLH  &kp LSHFT
 &trans     &alt_enter    &alt_cap     &trans       &alt_ctrl_del  &kp PSCRN                     &kp RCTRL  &trans    &trans   &trans  &trans  &trans
             >;
         };
