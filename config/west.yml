@@ -6,8 +6,6 @@ manifest:
       url-base: https://github.com/badjeff
     - name: tklzg
       url-base: https://github.com/tklzg
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -22,8 +20,5 @@ manifest:
     - name: zmk-input-behavior-listener
       remote: tklzg
       revision: main
-    - name: zmk-dongle-display
-      remote: englmaxi
-      revision: win
   self:
     path: config
