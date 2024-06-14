@@ -7,6 +7,8 @@ requires: [pro_micro]
 features:
   - keys
   - pointer
+  - display
 siblings:
   - charybdis_left
   - charybdis_right
+  - charybdis_dongle
