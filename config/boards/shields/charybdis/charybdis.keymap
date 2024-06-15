@@ -438,11 +438,11 @@
 //                    |         |         |         |         |         | |      |      |      |       |      |
             display-name = "mouse";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                   &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp MINUS
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp PG_UP &kp HOME &kp UP &kp END &none &none
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &ctrl_r &kp RET
-&trans  &trans  &trans  &trans  &trans  &trans                    &none &mkp LCLK &scl 5 MCLK &mkp RCLK &alt_left &alt_right
-&trans  &trans  &trans  &trans  &trans  &trans            &mo 2   &none    &kp BSPC  &none   &kp SPACE &none
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &kp PG_UP &kp HOME  &kp UP   &kp END   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &ctrl_r &kp RET
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &mkp LCLK &scl 5 MCLK &mkp RCLK &alt_left &alt_right
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
             >;
         };
 
@@ -455,11 +455,11 @@
 //                    |         |         |         |         |         | |      |      |      |       |      |
             display-name = "scroll";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                 &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp MINUS
-&trans  &trans  &trans  &trans  &trans  &trans                         &kp PG_UP &kp HOME &kp UP &kp END &none &none
-&trans  &trans  &trans  &trans  &trans  &trans                                   &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &ctrl_r &kp RET
-&trans  &trans  &trans  &trans  &trans  &trans                                   &none &mkp LCLK &scl 5 MCLK &mkp RCLK &alt_left &alt_right
-&trans  &trans  &trans  &trans  &trans  &trans                                &tog 4  &none    &kp BSPC  &none   &kp SPACE &none
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &kp PG_UP &kp HOME  &kp UP   &kp END   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &ctrl_r &kp RET
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &mkp LCLK &scl 5 MCLK &mkp RCLK &alt_left &alt_right
+&trans  &trans  &trans  &trans  &trans  &trans                   &tog 4    &trans    &trans   &trans    &trans  &trans
             >;
         };
 
