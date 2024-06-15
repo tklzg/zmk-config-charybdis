@@ -5,7 +5,7 @@ manifest:
     - name: tklzg
       url-base: https://github.com/tklzg
   projects:
-    - name: zmk-petejohanson
+    - name: zmk
       remote: tklzg
       revision: feat/pointers-move-scroll
       import: app/west.yml
