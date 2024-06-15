@@ -306,14 +306,6 @@
     
 
 / {
-
-    behaviors {
-        ftog: fallthrough_toggle_layer {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            fallthrough;
-        };
-    };
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
