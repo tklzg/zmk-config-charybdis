@@ -99,7 +99,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5)                  RC(4,6) RC(4,7)
         bindings = <&ib_tog_layer 4>;
    };
 
-      /* input config for mouse scroll mode on momentary mouse scoll layer */
+   /* input config for mouse scroll mode on momentary mouse scoll layer */
    trackball_peripheral_scroll_listener {
            compatible = "zmk,input-behavior-listener";
            device = <&pd1>;
