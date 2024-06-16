@@ -100,6 +100,17 @@
                 ;
         };
 
+        ctrl_w: ctrl_w {
+            label = "ZM_ctrl_w";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp W>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
         ctrl_a: ctrl_a {
             label = "ZM_ctrl_a";
             compatible = "zmk,behavior-macro";
@@ -451,7 +462,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &kp PG_UP &kp HOME  &kp UP   &kp END   &trans  &trans
 &kp LCTRL  &trans  &trans  &trans  &trans  &trans                &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &ctrl_r &kp RET
-&kp LSHFT  &trans  &trans  &trans  &trans  &trans                &trans    &mkp LCLK &sclk MCLK 5 &mkp RCLK &alt_left &alt_right
+&kp LSHFT  &trans  &trans  &trans  &trans  &trans                &ctrl_w   &mkp LCLK &sclk MCLK 5 &mkp RCLK &alt_left &alt_right
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
             >;
         };
