@@ -468,7 +468,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &scl 4 5 &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &mkp LCLK &scl 4 5 &mkp RCLK &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
             >;
         };
