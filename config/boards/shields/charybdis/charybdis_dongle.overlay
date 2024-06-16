@@ -128,7 +128,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5)                  RC(4,6) RC(4,7)
    ib_tog_layer: ib_tog_layer {
         compatible = "zmk,input-behavior-tog-layer";
         #binding-cells = <1>;
-        time-to-live-ms = <10000>;
+        time-to-live-ms = <60000>;
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
