@@ -343,6 +343,16 @@
             flavor = "tap-preferred";
             bindings = <&mo>, <&mkp>;
         };
+
+        scl2: scl_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SCL_LAYER2";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&mkp>, <&mo>;
+        };
  };
 
 / {
@@ -441,7 +451,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &kp PG_UP &kp HOME  &kp UP   &kp END   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &ctrl_r &kp RET
-&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &mkp LCLK &scl 5 MCLK &mkp RCLK &alt_left &alt_right
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &mkp LCLK &scl2 MCLK 5 &mkp RCLK &alt_left &alt_right
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
             >;
         };
