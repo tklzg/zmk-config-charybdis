@@ -13,7 +13,7 @@ manifest:
       remote: tklzg
       revision: main
     - name: zmk-split-peripheral-input-relay
-      remote: badjeff
+      remote: tklzg
       revision: main
     - name: zmk-input-behavior-listener
       remote: tklzg
