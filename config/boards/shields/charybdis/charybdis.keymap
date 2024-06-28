@@ -365,13 +365,13 @@
             bindings = <&mkp>, <&tog>;
         };
 
-        db: double-bracket {
-            compatible = "zmk, behavior-hold-tap";
+        db: double_bracket {
+            compatible = "zmk,behavior-hold-tap";
             label = "DOUBLE_BRACKET";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&alt_right>;
         };
  };
