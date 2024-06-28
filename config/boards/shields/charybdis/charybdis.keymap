@@ -371,8 +371,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &scl 4 5 &trans    &alt_db LCTRL LEFT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &scl 4 5 &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &kp LCTRL &trans    &trans  &trans
             >;
         };
 
