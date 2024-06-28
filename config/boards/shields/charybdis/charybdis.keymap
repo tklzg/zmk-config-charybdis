@@ -382,7 +382,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&trnas>, <&alt_right>;
+            bindings = <&trans>, <&alt_right>;
         };
  };
 
