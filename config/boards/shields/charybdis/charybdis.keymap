@@ -511,7 +511,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &scl 4 5 &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &scl 4 5 &trans    &alt_left  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
             >;
         };
