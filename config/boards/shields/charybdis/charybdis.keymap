@@ -365,7 +365,7 @@
             bindings = <&mkp>, <&tog>;
         };
 
-        dbl: double_bracket {
+        dbl: double_bracket_left {
             compatible = "zmk,behavior-hold-tap";
             label = "DOUBLE_BRACKET";
             #binding-cells = <2>;
@@ -375,7 +375,7 @@
             bindings = <&kp>, <&alt_left>;
         };
         
-        dbr: double_bracket {
+        dbr: double_bracket_right {
             compatible = "zmk,behavior-hold-tap";
             label = "DOUBLE_BRACKET";
             #binding-cells = <2>;
