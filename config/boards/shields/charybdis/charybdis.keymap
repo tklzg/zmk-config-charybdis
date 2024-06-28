@@ -273,7 +273,7 @@
 
         alt_end:alt_end {
             compatible="zmk,behavior-hold-tap";
-            label="ALT_DOUBLE";
+            label="ALT_END";
             #binding-cells=<2>;
             flavor="tap-preferred";
             tapping-term-ms=<200>;
