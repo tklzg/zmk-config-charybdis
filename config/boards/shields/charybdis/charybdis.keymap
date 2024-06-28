@@ -356,6 +356,17 @@
                 ;
         };
 
+        alt_test: alt_test {
+            label = "ZM_alt_test";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHIFT>
+                , <&macro_tap &kp G>
+                , <&macro_release &kp LSHIFT>
+                ;
+        };
+
         alt_right: alt_right {
             label = "ZM_alt_right";
             compatible = "zmk,behavior-macro";
@@ -374,7 +385,7 @@
             tapping-term-ms = <300>;
             quick-tap-ms = <125>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&alt_left>;
+            bindings = <&kp>, <&alt_test>;
         };
         
         dbr: double_bracket_right {
@@ -494,7 +505,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &kp PG_UP &kp HOME  &kp UP   &kp END   &trans  &ctrl_w
 &kp LCTRL  &trans  &trans  &trans  &trans  &trans                &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &ctrl_r &hm RCTRL RET
-&kp LSHFT  &trans  &trans  &trans  &trans  &trans                &trans    &mkp LCLK &sclk MCLK 5 &mkp RCLK &dbl LCTRL 0 &alt_right
+&kp LSHFT  &trans  &trans  &trans  &trans  &trans                &trans    &mkp LCLK &sclk MCLK 5 &mkp RCLK &dbl LCTRL 0 &alt_test
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
             >;
         };
