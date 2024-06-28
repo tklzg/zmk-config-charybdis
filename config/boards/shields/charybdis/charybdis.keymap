@@ -435,7 +435,7 @@
             tapping-term-ms=<200>;
             quick-tap-ms=<135>;
             global-quick-tap;
-            bindings=<&alt_macro>,<&kp>;
+            bindings=<&kp>,<&alt_macro>;
         };
 
         
@@ -537,7 +537,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &kp PG_UP &kp HOME  &kp UP   &kp END   &trans  &ctrl_w
 &kp LCTRL  &trans  &trans  &trans  &trans  &trans                &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &ctrl_r &hm RCTRL RET
-&kp LSHFT  &trans  &trans  &trans  &trans  &trans                &trans    &mkp LCLK &sclk MCLK 5 &mkp RCLK &alt_double LEFT LCTRL &alt_right
+&kp LSHFT  &trans  &trans  &trans  &trans  &trans                &trans    &mkp LCLK &sclk MCLK 5 &mkp RCLK &alt_double LCTRL LEFT &alt_right
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
             >;
         };
