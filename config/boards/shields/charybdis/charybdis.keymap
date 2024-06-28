@@ -472,7 +472,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &kp PG_UP &kp HOME  &kp UP   &kp END   &trans  &ctrl_w
 &kp LCTRL  &trans  &trans  &trans  &trans  &trans                &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &ctrl_r &kp RET
-&kp LSHFT  &trans  &trans  &trans  &trans  &trans                &trans   &mkp LCLK &sclk MCLK 5 &mkp RCLK &alt_left &db LCTRL 0
+&kp LSHFT  &trans  &trans  &trans  &trans  &trans                &trans   &mkp LCLK &sclk MCLK 5 &mkp RCLK &alt_left &kp LCTRL
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
             >;
         };
