@@ -263,10 +263,8 @@
             #binding-cells=<1>;
             bindings
                 =<&macro_param_1to1>
-                ,<&macro_press &to MACRO_PLACEHOLDER>
-                ,<&macro_pause_for_release>
-                ,<&macro_param_1to1>
-                ,<&macro_release &to MACRO_PLACEHOLDER>
+                ,<&macro_tap &to MACRO_PLACEHOLDER>
+                ,<&macro_tap &kp LSHIFT>
                 ;
         };
 
@@ -279,6 +277,17 @@
             quick-tap-ms=<135>;
             global-quick-tap;
             bindings=<&to_mac>,<&alt_mac>;
+        };
+
+        kp_end:kp_end {
+            compatible="zmk,behavior-hold-tap";
+            label="kp_END";
+            #binding-cells=<2>;
+            flavor="tap-preferred";
+            tapping-term-ms=<200>;
+            quick-tap-ms=<135>;
+            global-quick-tap;
+            bindings=<&kp>,<&to_mac>;
         };
 
         
@@ -381,7 +390,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                   &kp PG_UP &kp HOME  &kp UP   &kp END   &trans  &ctl_mac W
 &kp LCTRL  &trans  &trans  &trans  &trans  &trans                &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &ctl_mac R &hm RCTRL RET
 &kp LSHFT  &trans  &trans  &trans  &trans  &trans                &trans    &mkp LCLK &sclk MCLK 5 &mkp RCLK &alt_db LCTRL LEFT &alt_end 0 RIGHT
-&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &kp_end LCTRL 0 &trans    &trans  &trans
             >;
         };
 
