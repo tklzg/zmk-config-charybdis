@@ -262,9 +262,9 @@
             tap-ms=<0>;
             #binding-cells=<1>;
             bindings
-                =<&macro_param_1to1>
-                ,<&macro_tap &to MACRO_PLACEHOLDER>
-                ,<&macro_tap &kp LSHIFT>
+                =<&macro_tap &to 0>
+                ,<&macro_param_1to1>
+                ,<&macro_tap &kp MACRO_PLACEHOLDER>
                 ;
         };
 
@@ -389,8 +389,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &kp PG_UP &kp HOME  &kp UP   &kp END   &trans  &ctl_mac W
 &kp LCTRL  &trans  &trans  &trans  &trans  &trans                &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &ctl_mac R &hm RCTRL RET
-&kp LSHFT  &trans  &trans  &trans  &trans  &trans                &trans    &mkp LCLK &sclk MCLK 5 &mkp RCLK &alt_db LCTRL LEFT &alt_end 0 RIGHT
-&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &kp_end LCTRL 0 &trans    &trans  &trans
+&kp LSHFT  &trans  &trans  &trans  &trans  &trans                &trans    &mkp LCLK &sclk MCLK 5 &mkp RCLK &alt_db LCTRL LEFT &alt_end LSHIFT RIGHT
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &kp_end LCTRL BSPC &trans    &trans  &trans
             >;
         };
 
