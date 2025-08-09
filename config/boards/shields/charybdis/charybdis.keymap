@@ -413,7 +413,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &trans   &trans    &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                   &kp PG_UP &kp HOME  &kp UP   &kp END   &ctl_mac C  &ctl_mac W
-&kp LCTRL  &trans  &trans  &trans  &trans  &trans                &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &ctl_mac R &kp RET
+&kp LCTRL  &trans  &trans  &trans  &trans  &trans                &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp F5 &kp RET
 &trans  &trans  &trans  &trans  &trans  &trans                &trans    &mkp LCLK &sclk MCLK 5 &mkp RCLK &alt_db_second LCTRL MB4 &alt_end_second LSHIFT MB5
 &trans  &trans  &trans  &trans  &trans  &trans                   &trans    &trans    &kp_end LCTRL BSPC &trans    &trans  &trans
             >;
